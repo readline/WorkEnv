@@ -1,6 +1,7 @@
 #!/bin/bash
-git submodule git@github.com:Valloric/YouCompleteMe.git
-cd YouCompleteMe/
+cd ~/.WorkEnv
+git submodule add git@github.com:Valloric/YouCompleteMe.git vim/bundle/YouCompleteMe
 git submodule update --init --recursive
+cd vim/bundle/YouCompleteMe
 ./install.sh
 

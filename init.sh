@@ -11,10 +11,12 @@ ln -s ~/.vim/vimrc ~/.vimrc
 
 echo Init zsh...
 cd ~
+rm -rf ~/.oh-my-zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 cd ~/.WorkEnv/zsh
+cp zshrc.raw zshrc
 echo 'export PATH='`echo $PATH`':$PATH' >> zshrc
-rm ~/.zshrc 
+rm ~/.zshrc
 ln -s ~/.WorkEnv/zsh/zshrc ~/.zshrc
 
 echo Init tmux...
@@ -23,6 +25,6 @@ ln -s ~/.WorkEnv/tmux/tmux.conf ~/.tmux.conf
 ln -s ~/.WorkEnv/tmux/tmux.conf.local ~/.tmux.conf.local
 
 echo If you want to setup YouCompleteMe, use the cmd followed:
-cd ~/.WorkEnv/vim/bundle && sh installYouCompleteMe.sh
+echo cd ~/.WorkEnv/vim/bundle \&\& sh installYouCompleteMe.sh
 
 
