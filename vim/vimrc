@@ -101,7 +101,7 @@ inoremap <C-h> <LEFT>
 inoremap <C-j> <DOWN>
 inoremap <C-k> <UP>
 
-
+inoremap <C-e> <ESC>$a
 
 " 撤销
 set undolevels=200              "How many undos
